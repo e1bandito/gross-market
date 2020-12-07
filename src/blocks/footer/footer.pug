@@ -1,3 +1,12 @@
 +b.FOOTER.footer
   .container
     +e.inner
+      +e.top
+        include ../../blocks/logo/logo
+        +e.share
+          +e.H2.share-title поделиться
+          include ../../blocks/social/social
+      +e.bottom
+        +e.P.copyright &#169; Гросс маркет 2020
+        +e.policy
+          +e.A.policy-link(href="#") Политика обработки персональных данных
