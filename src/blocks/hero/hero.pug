@@ -1,0 +1,19 @@
+- const heroData = getData('hero')
+
++b.hero
+  .container
+    +e.slider
+      each item in heroData
+        +e.item
+          +e.item-inner
+            +e.H2.title !{item.title}
+            +e.img
+              +e.img-inner
+                +picture(item.img, item.name, 'jpg')
+              each badge in item.badge
+                +badge(badge.title, 'hero__badge ' + badge.classes)
+    +e.slider-controls
+      +e.BUTTON.slider-button.--prev(aria-label="prev", type="button")
+        +icon('arrow-prev')(width="10", height="10")
+      +e.BUTTON.slider-button.--next(aria-label="next", type="button")
+        +icon('arrow-next')(width="10", height="10")
