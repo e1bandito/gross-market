@@ -1,0 +1,70 @@
+.photo {
+  padding: 0 0 69px;
+}
+
+.photo__title {
+  margin-bottom: 32px;
+}
+
+.photo__top-list {
+  @include lsr;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: calc(50% + 15px);
+}
+
+.photo__top-item {
+  width: calc((100% - 60px) / 2);
+  padding-bottom: calc((100% - 60px) / 2);
+  background-color: $gray;
+  margin: 0 15px 30px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &--first {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: calc(50% - 30px);
+    padding-bottom: calc(50% - 30px);
+    margin: 0;
+  }
+}
+
+.photo__list {
+  @include lsr;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.photo__item {
+  width: calc((100% - 120px) / 4);
+  padding-bottom: calc((100% - 120px) / 4);
+  background-color: $gray;
+  margin: 0 15px 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.photo__btn {
+  padding: 12px 16px;
+  background-color: $gray;
+  border-radius: 8px;
+  border: none;
+  appearance: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $yellow;
+  }
+}

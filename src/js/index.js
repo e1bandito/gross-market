@@ -13,5 +13,6 @@ $('.vacancy__slider').slick({
   infinite: false,
   variableWidth: true,
   centerMode: true,
+  centerPadding: '165px',
   initialSlide: 1
 });
