@@ -7,3 +7,11 @@ $('.hero__slider').slick({
   infinite: false
 });
 
+$('.vacancy__slider').slick({
+  prevArrow: '.vacancy__slider-button--prev',
+  nextArrow: '.vacancy__slider-button--next',
+  infinite: false,
+  variableWidth: true,
+  centerMode: true,
+  initialSlide: 1
+});

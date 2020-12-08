@@ -1,5 +1,18 @@
 .hero {
   background-color: $gray;
+
+  & .container {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+.hero__inner {
+  position: relative;
+}
+
+.hero__item {
+  padding: 0 15px;
 }
 
 .hero__item-inner {
@@ -65,7 +78,9 @@
 }
 
 .hero__slider-controls {
-  position: relative;
+  position: absolute;
+  left: 15px;
+  bottom: 48px;
   width: 88px;
   background-color: $white;
   border-radius: 8px;

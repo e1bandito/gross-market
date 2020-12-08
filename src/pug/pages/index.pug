@@ -1,6 +1,7 @@
 extends ../layout/layout
 include ../../blocks/btn/btn
 include ../../blocks/badge/badge
+include ../../blocks/card/card
 
 block variables
   - var pageTitle = 'main'
@@ -9,6 +10,8 @@ block content
   include ../../blocks/header/header
 
   main.main
+    h1.visually-hidden гросс маркет
     include ../../blocks/hero/hero
+    include ../../blocks/vacancy/vacancy
 
   include ../../blocks/footer/footer

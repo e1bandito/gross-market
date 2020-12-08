@@ -1,0 +1,7 @@
+mixin card(item)
+  +b.A.card(href="#")
+    +badge(item.badge, 'card__badge')
+    +e.img
+      +picture(item.img, item.badge, 'png')
+    +e.overlay
+      +e.P.text !{item.text}
