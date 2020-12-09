@@ -2,6 +2,12 @@
   padding: 72px 0 8px;
   background-color: $gray;
 
+  & .logo {
+    @include max($sm) {
+      margin-bottom: 24px;
+    }
+  }
+
   @include max($sm) {
     padding: 48px 0 8px;
 
@@ -21,6 +27,11 @@
   @include max($sm) {
     padding: 24px 15px;
     border-radius: 0;
+    flex-direction: column;
+  }
+
+  @include max($xs) {
+    align-items: flex-start;
   }
 }
 
@@ -31,6 +42,16 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 15px;
+
+  @include max($sm) {
+    width: 100%;
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  @include max($xs) {
+    justify-content: flex-start;
+  }
 }
 
 .footer__share-title {
@@ -51,7 +72,8 @@
   padding: 24px 0;
 
   @include max($sm) {
-    padding: 24px 15px;
+    padding: 18px 15px 24px;
+    flex-direction: column;
   }
 }
 
@@ -61,11 +83,32 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
+
+  @include max($sm) {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+
+  @include max($xs) {
+    text-align: left;
+  }
 }
 
 .footer__policy {
   width: 50%;
   padding-left: 15px;
+
+  @include max($sm) {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  @include max($xs) {
+    text-align: left;
+  }
 }
 
 .footer__policy-link {

@@ -35,4 +35,17 @@ $('.vacancy__slider').slick({
 
 $('.photo__btn').on('click', function () {
   $('.photo__item').slideDown();
-})
+});
+
+$('.header__phone-btn').on('click', function () {
+  $('.header__nav').toggleClass('header__nav--open');
+});
+
+$(document).on('scroll', window, function () {
+  if ($(window).scrollTop() > 200) {
+    $('.header__nav').addClass('header__nav--fixed');
+  } else {
+    $('.header__nav').removeClass('header__nav--fixed');
+  }
+});
+
