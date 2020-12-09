@@ -1,0 +1,18 @@
+[
+  {
+    "id": "entity",
+    "name": "map-radio",
+    "label": "юрлица"
+  },
+  {
+    "id": "individual",
+    "name": "map-radio",
+    "label": "физлица"
+  },
+  {
+    "id": "all",
+    "name": "map-radio",
+    "checked": "checked",
+    "label": "показать всё"
+  }
+]

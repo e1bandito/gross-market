@@ -1,6 +1,6 @@
 .hero {
   background-color: $gray;
-  margin-bottom: 72px;
+  margin-bottom: 68px;
 
   & .container {
     padding-left: 150px;
@@ -51,11 +51,11 @@
 }
 
 .hero__title {
-  margin: 48px 0 0;
+  margin: 43px 0 0;
   width: 450px;
   font-weight: 500;
   font-size: 72px;
-  line-height: 1;
+  line-height: 67px;
 }
 
 .hero__badge {
@@ -80,9 +80,9 @@
 
 .hero__slider-controls {
   position: absolute;
-  left: 15px;
-  bottom: 48px;
-  width: 88px;
+  left: 14px;
+  bottom: 51px;
+  width: 91px;
   background-color: $white;
   border-radius: 8px;
   display: flex;

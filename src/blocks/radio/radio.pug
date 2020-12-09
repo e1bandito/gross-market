@@ -1,0 +1,4 @@
+mixin radio(data)
+  +b.radio
+    +e.INPUT.field.visually-hidden(type="radio", id= data.id, name= data.name, checked= data.checked, required)
+    +e.LABEL.label(for= data.id)=  data.label

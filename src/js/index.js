@@ -16,3 +16,7 @@ $('.vacancy__slider').slick({
   centerPadding: '165px',
   initialSlide: 1
 });
+
+$('.photo__btn').on('click', function () {
+  $('.photo__item').slideDown();
+})
