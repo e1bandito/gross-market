@@ -1,13 +1,27 @@
 .footer {
   padding: 72px 0 8px;
   background-color: $gray;
+
+  @include max($sm) {
+    padding: 48px 0 8px;
+
+    & .container {
+      padding: 0;
+    }
+  }
 }
 
 .footer__top {
   display: flex;
+  align-items: center;
   background-color: $white;
   padding: 24px;
   border-radius: 8px;
+
+  @include max($sm) {
+    padding: 24px 15px;
+    border-radius: 0;
+  }
 }
 
 .footer__share {
@@ -24,6 +38,10 @@
   font-size: 32px;
   line-height: 41px;
   margin: 0;
+
+  @include max(640) {
+    display: none;
+  }
 }
 
 
@@ -31,6 +49,10 @@
   display: flex;
   align-items: center;
   padding: 24px 0;
+
+  @include max($sm) {
+    padding: 24px 15px;
+  }
 }
 
 .footer__copyright {

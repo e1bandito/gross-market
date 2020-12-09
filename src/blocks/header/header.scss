@@ -1,5 +1,9 @@
 .header {
   padding: 32px 0;
+
+  @include max($sm) {
+    padding: 24px 0;
+  }
 }
 
 .header__inner {
@@ -16,7 +20,17 @@
   color: $black;
   transition: opacity 0.3s;
 
+  @include max(660) {
+    display: none;
+  }
+
   &:hover {
     opacity: 0.5;
+  }
+}
+
+.header__btn {
+  @include max(660) {
+    display: none;
   }
 }

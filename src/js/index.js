@@ -4,7 +4,8 @@ import slick from 'slick-carousel/slick/slick.min';
 $('.hero__slider').slick({
   prevArrow: '.hero__slider-button--prev',
   nextArrow: '.hero__slider-button--next',
-  infinite: false
+  infinite: false,
+  adaptiveHeight: true,
 });
 
 $('.vacancy__slider').slick({
@@ -13,8 +14,23 @@ $('.vacancy__slider').slick({
   infinite: false,
   variableWidth: true,
   centerMode: true,
-  centerPadding: '165px',
-  initialSlide: 1
+  initialSlide: 1,
+  responsive: [
+    {
+      breakpoint: 1440,
+      settings: {
+        centerMode: false,
+        initialSlide: 0
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        centerMode: true,
+        infinite: true
+      }
+    }
+  ]
 });
 
 $('.photo__btn').on('click', function () {

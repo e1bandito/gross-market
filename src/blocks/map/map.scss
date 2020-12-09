@@ -1,9 +1,25 @@
 .map {
   padding: 0 0 72px 0;
+
+  @include max($md) {
+    padding: 0;
+
+    & .container {
+      padding: 0;
+    }
+  }
 }
 
 .map__title {
   margin-bottom: 32px;
+
+  @include max($md) {
+    padding: 0 39px;
+  }
+
+  @include max(740) {
+    padding: 0 15px;
+  }
 }
 
 .map__wrap {
@@ -13,12 +29,29 @@
   background-color: $gray;
   border-radius: 8px;
   overflow: hidden;
+
+  @include max($md) {
+    height: 600px;
+  }
 }
 
 .map__form {
   position: absolute;
   bottom: 24px;
   left: 24px;
+
+  @include max($md) {
+    bottom: 48px;
+    left: 39px;
+  }
+
+  @include max(740) {
+    left: 15px;
+  }
+
+  @include max($sm) {
+    bottom: 32px;
+  }
 
   & .radio {
     margin-bottom: 8px;

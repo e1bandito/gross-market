@@ -1,5 +1,9 @@
 .vacancy {
   padding: 0 0 72px;
+
+  @include max($sm) {
+    padding-bottom: 48px;
+  }
 }
 
 .vacancy__wrap {
@@ -17,9 +21,27 @@
     padding-right: 39px;
   }
 
-  @include max($md) {
+  @include max(740) {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+.vacancy__slider {
+  @include max(1440) {
+    padding: 0 0 0 165px;
+  }
+
+  @include max($xl) {
+    padding: 0 0 0 39px;
+  }
+
+  @include max(740) {
+    padding: 0 0 0 15px;
+  }
+
+  @include max($sm) {
+    padding: 0;
   }
 }
 
@@ -34,6 +56,14 @@
   margin-right: 30px;
   position: relative;
   align-self: flex-start;
+
+  @include max($lg) {
+    width: 300px;
+  }
+
+  @include max($sm) {
+    width: 252px;
+  }
 }
 
 .vacancy__slider-controls {
@@ -43,6 +73,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include max(660) {
+    display: none;
+  }
 
   & .slick-disabled {
     & svg {

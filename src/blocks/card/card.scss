@@ -9,6 +9,14 @@
   overflow: hidden;
   color: $black;
 
+  @include max($lg) {
+    height: 410px;
+  }
+
+  @include max($lg) {
+    height: 344px;
+  }
+
   &:hover {
     & .card__overlay {
       opacity: 1;
