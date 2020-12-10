@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import slick from 'slick-carousel/slick/slick.min';
-import init from '../blocks/map/map'
+import init from '../blocks/map/map';
+import picturefill from 'picturefill';
+import svgxuse from 'svgxuse';
 
 $('.hero__slider').slick({
   prevArrow: '.hero__slider-button--prev',
