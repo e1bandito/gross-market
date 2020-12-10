@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>main</title>
   <link rel="stylesheet" href="./css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=0dd7dd00-a65c-4918-908c-279c4cecaddd&amp;lang=ru_RU"></script>
 </head>
 
 <body>
@@ -136,11 +137,13 @@
         <div class="map__inner">
           <h2 class="map__title main__title">география</h2>
           <div class="map__wrap">
-            <form class="map__form" method="post">
-              <div class="radio"><input class="radio__field visually-hidden" type="radio" id="entity" name="map-radio" required="required" /><label class="radio__label" for="entity">юрлица</label></div>
-              <div class="radio"><input class="radio__field visually-hidden" type="radio" id="individual" name="map-radio" required="required" /><label class="radio__label" for="individual">физлица</label></div>
-              <div class="radio"><input class="radio__field visually-hidden" type="radio" id="all" name="map-radio" checked="checked" required="required" /><label class="radio__label" for="all">показать всё</label></div>
-            </form>
+            <div class="map__body" id="map">
+              <form class="map__form" method="post">
+                <div class="radio"><input class="radio__field visually-hidden" type="radio" id="entity" name="map-radio" required="required" /><label class="radio__label" for="entity">юрлица</label></div>
+                <div class="radio"><input class="radio__field visually-hidden" type="radio" id="individual" name="map-radio" required="required" /><label class="radio__label" for="individual">физлица</label></div>
+                <div class="radio"><input class="radio__field visually-hidden" type="radio" id="all" name="map-radio" checked="checked" required="required" /><label class="radio__label" for="all">показать всё</label></div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

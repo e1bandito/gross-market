@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import slick from 'slick-carousel/slick/slick.min';
+import init from '../blocks/map/map'
 
 $('.hero__slider').slick({
   prevArrow: '.hero__slider-button--prev',
@@ -48,4 +49,8 @@ $(document).on('scroll', window, function () {
     $('.header__nav').removeClass('header__nav--fixed');
   }
 });
+
+ymaps.ready(init);
+
+
 
